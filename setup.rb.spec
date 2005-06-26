@@ -1,5 +1,6 @@
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-Summary:	setup.rb is a generic installer for ruby scripts
+Summary:	setup.rb - a generic installer for Ruby scripts
+Summary(pl):	setup.rb - ogólny instalator dla skryptów jêzyka Ruby
 Name:		setup.rb
 Version:	3.3.1
 Release:	1
@@ -14,15 +15,19 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-setup.rb is a generic installer for ruby scripts.
+setup.rb is a generic installer for Ruby scripts.
+
+%description -l pl
+setup.rb to ogólny instalator dla skryptów jêzyka Ruby.
 
 %prep
 %setup -q -n setup-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/%{_datadir}
-install setup.rb $RPM_BUILD_ROOT/%{_datadir}/setup.rb
+install -d $RPM_BUILD_ROOT%{_datadir}
+
+install setup.rb $RPM_BUILD_ROOT%{_datadir}/setup.rb
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -32,5 +37,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog Makefile README.en TODO doc.en NEWS.en Template.README.en 
 %doc Usage_en.txt sample
 %lang(jp) %doc README.ja doc.ja NEWS.ja Template.README.ja Usage_ja.txt
-
 %attr(755,root,root) %{_datadir}/%{name}

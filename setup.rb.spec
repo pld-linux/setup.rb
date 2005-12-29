@@ -8,9 +8,9 @@ Group:		Development/Tools
 Source0:	http://i.loveruby.net/archive/setup/setup-%{version}.tar.gz
 # Source0-md5:	5df5b2c9e2e575edc17e57d3f859e7b2
 URL:		http://i.loveruby.net/en/prog/setup.html
-BuildRequires:	rpmbuild(macros) >= 1.272
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

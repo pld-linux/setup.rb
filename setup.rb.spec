@@ -1,5 +1,5 @@
 Summary:	setup.rb - a generic installer for Ruby scripts
-Summary(pl.UTF-8):   setup.rb - ogólny instalator dla skryptów języka Ruby
+Summary(pl.UTF-8):	setup.rb - ogólny instalator dla skryptów języka Ruby
 Name:		setup.rb
 Version:	3.3.1
 Release:	2

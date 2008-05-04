@@ -1,17 +1,17 @@
 Summary:	setup.rb - a generic installer for Ruby scripts
 Summary(pl.UTF-8):	setup.rb - ogólny instalator dla skryptów języka Ruby
 Name:		setup.rb
-Version:	3.3.1
-Release:	2
+Version:	3.4.1
+Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	http://i.loveruby.net/archive/setup/setup-%{version}.tar.gz
-# Source0-md5:	5df5b2c9e2e575edc17e57d3f859e7b2
+# Source0-md5:	f0759ec72473e5802d9571df4da6642c
 URL:		http://i.loveruby.net/en/prog/setup.html
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
-#BuildArch:	noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

@@ -26,7 +26,6 @@ setup.rb to ogólny instalator dla skryptów języka Ruby.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}
-
 install setup.rb $RPM_BUILD_ROOT%{_datadir}/setup.rb
 
 %clean

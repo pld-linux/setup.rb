@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	setup.rb - ogólny instalator dla skryptów języka Ruby
 Name:		setup.rb
 Version:	3.4.1
 Release:	3
-License:	GPL
+License:	LGPL v2.1
 Group:		Development/Tools
 Source0:	http://i.loveruby.net/archive/setup/setup-%{version}.tar.gz
 # Source0-md5:	f0759ec72473e5802d9571df4da6642c
@@ -33,7 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog Makefile README.en TODO doc.en NEWS.en Template.README.en
-%doc Usage_en.txt sample
-%lang(jp) %doc README.ja doc.ja NEWS.ja Template.README.ja Usage_ja.txt
+%doc ChangeLog Makefile README.en TODO doc.en NEWS.en Template.README.en Usage_en.txt sample
+%lang(ja) %doc README.ja doc.ja NEWS.ja Template.README.ja Usage_ja.txt
 %attr(755,root,root) %{_datadir}/%{name}

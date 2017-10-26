@@ -1,0 +1,11 @@
+--- setup-3.4.1/setup.rb~	2005-11-20 13:54:27.000000000 +0200
++++ setup-3.4.1/setup.rb	2017-10-26 20:17:38.577633766 +0300
+@@ -785,7 +785,7 @@
+     else
+       require 'rbconfig'
+     end
+-    ::Config::CONFIG
++    ::RbConfig::CONFIG
+   end
+ 
+   def initialize(ardir_root, config)

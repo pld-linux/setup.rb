@@ -10,6 +10,7 @@ Source0:	http://i.loveruby.net/archive/setup/setup-%{version}.tar.gz
 Patch0:		rbconfig-deprecation.patch
 URL:		http://i.loveruby.net/en/projects/setup/
 BuildRequires:	rpmbuild(macros) >= 1.665
+Requires:	ruby-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
